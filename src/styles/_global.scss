@@ -47,9 +47,6 @@ ul {
 
 .container {
   margin-top: 100px;
-  margin-left: 100px;
-  width: 400px;
-  height: 550px;
   border: 1px solid #dee2e6;
   border-radius: 1rem;
   overflow: hidden;
@@ -118,7 +115,38 @@ ul {
 
 // Botones
 .container_botton {
+  padding: 5px;
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+
+  .favoritos,
+  .descuento {
+    width: 20%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+  }
+}
+
+.favoritos {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+
+  .heart {
+    grid-column: 1;
+    align-self: center;
+  }
+
+  p {
+    grid-column: 2;
+    align-self: center;
+    margin: 0;
+  }
 }
 
 .favoritos {
@@ -154,7 +182,7 @@ ul {
 }
 
 .descuento {
-  padding: 1px 20px;
+  padding: 10px 20px;
   border: 1px solid #e1e1e1;
   border-radius: 20px;
   background-color: #ff8e8e;
@@ -191,6 +219,7 @@ ul {
 
 .compartir {
   padding-top: 15px;
+  padding-bottom: 20px;
   padding-left: 45px;
   text-transform: uppercase;
   font-weight: 300;

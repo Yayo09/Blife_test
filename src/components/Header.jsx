@@ -43,10 +43,11 @@ const Header = () => {
           <img src={search} alt="search" />
         </span>
         <span>
-          <img src={shopping} alt="shopping" />
+          <img src={user} alt="user" />
         </span>
         <span>
-          <img src={user} alt="user" />
+          <p>2</p>
+          <img src={shopping} alt="shopping" />
         </span>
       </div>
     </header>

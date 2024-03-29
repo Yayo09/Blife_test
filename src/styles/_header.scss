@@ -108,12 +108,28 @@
   .icons {
     flex: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
 
     span {
+      position: relative;
+      display: inline-block;
+
       img {
-        max-width: 15%;
+        max-width: 20px;
         height: auto;
+      }
+
+      p {
+        font-size: 10px;
+        position: absolute;
+        top: -15px;
+        right: -12px;
+        margin: 0;
+        padding: 5px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
       }
     }
   }
