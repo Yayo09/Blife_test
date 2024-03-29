@@ -1,0 +1,45 @@
+@import "./global";
+@import "./header";
+
+/** Para Banner Horizontal */
+
+@media (min-width: 410px) {
+  .banner_horizontal {
+    display: block;
+    right: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner_horizontal {
+    display: block;
+    right: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner_horizontal {
+    display: block;
+    right: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+
+    .logo {
+      margin-bottom: 10px;
+    }
+
+    .nav {
+      order: 1;
+    }
+
+    .icons {
+      order: 3;
+    }
+  }
+}
+
+/** Para el menú de Hamburguesa del Nav **/
